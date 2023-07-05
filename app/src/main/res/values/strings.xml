@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pic Online</string>
+    <string name="search_hint">city</string>
+    <string name="input_text">Введите текст!</string>
+    <string name="load_error">Ошибка загрузки</string>
+    <string name="load_more_error">Не удалось загрузить больше</string>
+    <string name="loading">Загрузка…</string>
+</resources>
