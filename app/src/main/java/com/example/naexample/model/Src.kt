@@ -1,9 +1,11 @@
 package com.example.naexample.model
 
+import android.os.Parcelable
 import com.squareup.moshi.JsonClass
+import kotlinx.parcelize.Parcelize
 
 @JsonClass(generateAdapter = true)
-
+@Parcelize
 data class Src(
 
     var original: String? = null,
@@ -15,4 +17,4 @@ data class Src(
     var landscape: String? = null,
     var tiny: String? = null
 
-)
+):Parcelable

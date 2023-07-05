@@ -10,6 +10,7 @@ interface Api {
     suspend fun searchPhotos(
         @Query("query") query: String,
         @Query("page") page: Int,
-        @Query("per_page") perPage: Int
+        @Query("per_page") perPage: Int,
+        @Query("locale") string:String
     ): Response<PexelResponse>
 }

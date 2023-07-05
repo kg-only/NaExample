@@ -1,10 +1,12 @@
 package com.example.naexample.model
 
+import android.os.Parcelable
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import kotlinx.parcelize.Parcelize
 
 @JsonClass(generateAdapter = true)
-
+@Parcelize
 data class Photos(
 
     var id: Int? = null,
@@ -17,4 +19,4 @@ data class Photos(
     var src: Src? = Src(),
     var liked: Boolean? = null,
     var alt: String? = null
-)
+):Parcelable

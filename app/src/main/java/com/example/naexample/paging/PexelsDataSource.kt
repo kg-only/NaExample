@@ -11,8 +11,9 @@ class PexelsDataSource(
 ) : PagingSource<Int, Photos>() {
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Photos> {
         return try {
+            val lang = "ru-RU"
             val currentPage = params.key ?: 1 // Starting page, if null, default to 1
-            val response = api.searchPhotos(query, currentPage, params.loadSize)
+            val response = api.searchPhotos(query, currentPage, params.loadSize,lang)
             if (response.isSuccessful) {
                 val pexelResponse = response.body()
                 val photos = pexelResponse?.photos ?: emptyList()

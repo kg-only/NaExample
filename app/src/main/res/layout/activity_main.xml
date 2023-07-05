@@ -28,9 +28,8 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/search_hint"
-                    android:textColorHint="@color/grey"
                     app:endIconMode="clear_text"
+                    app:hintEnabled="false"
                     app:startIconDrawable="@drawable/ic_search_24">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -38,6 +37,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#00000000"
+                        android:hint="@string/search_hint"
                         android:imeOptions="actionDone"
                         android:inputType="text"
                         android:textColor="@color/black"
